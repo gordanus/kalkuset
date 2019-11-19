@@ -6,7 +6,7 @@ html, body{
 
 .masthead {
     height: 100vh;
-    min-height: 500px;
+    /* min-height: 500px; */
     background-image: url('../img/Background-4.png');
     background-size: cover;
     background-position: center;
