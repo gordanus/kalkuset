@@ -1,0 +1,134 @@
+html, body{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(236, 234, 234);
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../img/Background-4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 0;
+  }
+
+  ul>li{
+      margin-top: 20px;
+  }
+  
+
+  /* down arrow */
+
+  .arrow-container {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+    z-index: 5;
+  }
+  .arrow-container:hover {
+    cursor: pointer;
+  }
+  .arrow-container:hover .arrow {
+    top: 50%;
+  }
+  .arrow-container:hover .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+  }
+  .arrow-container:hover .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 50%;
+    transition: all .4s ease;
+  }
+  .arrow:before, .arrow:after {
+    transition: all .4s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    transform-origin: bottom right;
+    background: #fff;
+    width: 4px;
+    height: 50px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
+  .arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+  .arrow:nth-child(1) {
+    opacity: 0.3;
+    top: 35%;
+  }
+  .arrow:nth-child(2) {
+    opacity: 0.6;
+    top: 55%;
+  }
+  .arrow:nth-child(3) {
+    opacity: 0.9;
+    top: 75%;
+  }
+
+  /* down arrow end */
+
+  video {
+      width: 100%;
+  }
+
+  button{
+      margin-top: 20px;
+  }
+
+  .footer{
+      background-color: gray;
+      height: 50px;
+      padding-top: 15px;
+      margin-bottom: 0;
+      font-size: .9em;
+  }
+
+  .footer p {
+    margin: 0;
+    color: white;
+  }
+
+  .phone{
+    display: none;
+  }
+
+  @media screen and (max-width:600px){
+      h1{
+          font-size:4em!important;
+      }
+
+      .phone{
+        width: 100%;
+        text-align: center;
+      }
+      .fa-phone-square{
+        position: fixed;
+        bottom: 50px;
+        font-size: 5em;
+        color: green;
+        transform: translate(-50%);
+      }
+  }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/cmyk.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Kalkuset&reg;</title>
+</head>
+
+<body>
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-2">KALKUSET</h1>
+                    <p class="lead">Program za kalkulaciju cena u ofset štampi</p>
+                </div>
+                <a href="#firstSection" class="arrow-container">
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5" id="firstSection">
+        <div class="container">
+            <!-- <h2 class="font-weight-normal text-center">Opis</h2> -->
+            <ul>
+                <li>Program je namenjen za izradu kalkulacije potrebnog materijala za ofset
+                    štampu (hartije i ploča), ukupnu cenu istog, zatim cenu artikla po komadu i ukupno za ceo tiraž, sa
+                    uračunatom cenom rada.</li>
+                <li>U nekoliko koraka se dolazi do ukupne količine materijala neophodnog za
+                    izradu posla, kao i do cene troškova.</li>
+
+                <li>Program poseduje bazu podataka u koju se unose materijali i njihove
+                    jedinične cene, na osnovu kojih se vrši kalkulacija. Baza je veoma fleksibilna i svaka promena (novi
+                    unos ili promena postojećeg) se automatski registruje u programu. S obzirom da su cene materijala
+                    izražene u evrima, prilikom svakog pokretanja, program automatski preuzima aktuelni srednji kurs
+                    evra sa interneta i koristi ga za preračunavanje u dinare.</li>
+                <li>Pored toga, program omogućava da se jednim klikom napravi ponuda sa
+                    izračunatim cenama, na memorandumu firme, koja se zatim može poslati direktno klijentu.</li>
+                <li>Ukoliko postoji potreba da se radi kalkulacija cena od strane firme koja
+                    nije obveznik PDV-a, postoji i ta mogućnost, čijim se odabirom automatski dodaje PDV na materijal
+                    koji ponuđač svakako plaća prilikom kupovine repro materijala, a klijentu se daje cena bez PDV-a.
+                </li>
+                <li>Program se može prilagoditi klijentu i njegovim potrebama.</li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container">
+            <h2 class="font-weight-light text-center">Demo video</h2>
+            <video src="kalkulacija_demo.mp4" loop controls muted></video>
+        </div>
+    </section>
+    <section class="py-4">
+
+        <div class="container col-md-8">
+            <h2 class="font-weight-light text-center" style="margin-bottom: 30px;">Kontaktirajte me</h2>
+            <p class="text-muted text-center">Popunite i pošaljite vaše podatke ukoliko želite da isprobate program
+                potpuno besplatno</p>
+            <p class="text-muted text-center">Ili me pozovite na <a href="tel:+381692594317"
+                    class="btn btn-success btn-sm">069/259 43 17</a></p>
+            <form name="sentMessage" id="contactForm" novalidate>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Ime" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Poruka"
+                        required></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div id="success"></div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Pošalji</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="phone">
+        <a href="tel:+381692594317"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="footer text-center">
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script>. Sva prava zadržana. Designed by Gordan</p>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script>
+</body>
+
+</html>
