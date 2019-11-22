@@ -14,9 +14,9 @@ $(document).ready(function () {
         var windowTop = $(window).scrollTop() + 100;
 
         if (windowTop > contentOffset) {
-            $(".phone").fadeIn(300);
+            $(".phone").slideDown(500); //fadeIn
         } else {
-            $(".phone").fadeOut(300);
+            $(".phone").slideUp(500); //fadeOut
         }
-    });
+    }); 
 });
