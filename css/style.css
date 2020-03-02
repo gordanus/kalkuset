@@ -331,7 +331,7 @@ html, body{
       height: 70px;
       padding-top: 15px;
       margin-bottom: 0;
-      font-size: .7em;
+      font-size: .9em;
   }
 
   .footer p {
@@ -364,5 +364,9 @@ html, body{
         display: block;
         font-size: 3.7em;
         color: #28a745;
+      }
+
+      .footer {
+        font-size: 0.7em;
       }
   }
